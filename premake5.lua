@@ -5,6 +5,8 @@ project "GLFW"
 	targetdir ("%{wks.location}/bin/" .. output_dir .. "/third-party")
     objdir ("%{wks.location}/intermediate/" .. output_dir .. "/%{prj.name}")
 
+	include_glfw = "%{prj.location}/include"
+
 	files
 	{
 		"include/GLFW/glfw3.h",
