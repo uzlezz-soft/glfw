@@ -1,11 +1,7 @@
 project "GLFW"
-	kind "StaticLib"
 	language "C"
-
-	targetdir ("%{wks.location}/bin/" .. output_dir .. "/third-party")
-    objdir ("%{wks.location}/intermediate/" .. output_dir .. "/%{prj.name}")
-
-	include_glfw = "%{prj.location}/include"
+	
+	setup_static_lib ()
 
 	files
 	{
