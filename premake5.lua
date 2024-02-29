@@ -1,7 +1,6 @@
 project "GLFW"
+	kind "StaticLib"
 	language "C"
-	
-	setup_static_lib ()
 
 	files
 	{
